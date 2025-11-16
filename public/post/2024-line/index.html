@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto" data-theme="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>2024 LINE TECH FRESH 面試心得 | DeCody(cdxvy30)</title>
+<meta name="keywords" content="Interview">
+<meta name="description" content="說在前面
+跟板上的其他心得不太一樣，總共面試了兩次，第一面是後端/全端的職缺，自己評估表現雖然不算差但也不到特別出色，不過也因為在面試後端過程中給面試官留下不錯的印象 (後來進公司後在活動中跟一面的面試官相認時聊到的，據說當初面完一直被面試官們覺得我對 DevOps 比較有興趣)，才拿到第二次面試機會。
+第二面是 DevOps/SRE，屬於偏向維運的工作內容，是除了後端開發以外我也很感興趣的另一個領域，還好有順利拿下。
+趁著記憶還在，還有面試當下的一些紀錄，希望能幫到最近/未來也想進到 LINE 實習的人們！
+背景
+申請當下是土木所碩二，有新創後端工程師、國泰雲端架構工程的實習經驗，靠自學、實習累積經驗和技能，技能主要點在 Backend 和 DevOps；另外有開源社群 (雲端原生運算基金會 CNCF、台灣雲端原生使用者社群 CNTUG) 貢獻的經驗，在這兩個社群的貢獻都是偏技術推廣的性質。
+時間軸
+
+2024.03.30 投遞履歷
+2024.04.12 收到面試邀約
+2024.04.19 Backend/Central Dev team 面試
+2024.05.16 收到感謝信
+2024.06.12 收到加開職缺 (DevOps/SRE)，透過朋友內推
+2024.06.25 DevOps/SRE team 面試，三天後錄取
+
+面試職位
+
+Backend/Central Dev Team
+DevOps/SRE
+
+第一次面的內容因為沒有錄取就不特別放了XD，所以主要會介紹 DevOps/SRE 的面試內容，也是 TECH FRESH 中比較少見的職缺。
+面試內容
+面試官共有兩位，分別是 DevOps 和 SRE 的 Team Lead，面試過程主要是 DevOps Team Lead 主導 (也是我目前的 Mentor)。
+面試官先說明為什麼找我來面試，主要是我過去除了後端開發之外，也有一些 DevOps/SRE 的實務經驗，加上 Backend Team 給的 feedback 不錯，才找我來進行第二次面試。">
+<meta name="author" content="">
+<link rel="canonical" href="http://localhost:1313/post/2024-line/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.343cc480b9ffc8f04ccbe5e968ad674880cab773ec19905e93033065c1e7a804.css" integrity="sha256-NDzEgLn/yPBMy&#43;XpaK1nSIDKt3PsGZBekwMwZcHnqAQ=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/post/2024-line/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+                color-scheme: dark;
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .toc {
+                background: var(--entry);
+            }
+        }
+
+        @media (prefers-color-scheme: light) {
+            .list::-webkit-scrollbar-thumb {
+                border-color: var(--code-bg);
+            }
+        }
+
+    </style>
+</noscript>
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else if (localStorage.getItem("pref-theme") === "light") {
+       document.querySelector("html").dataset.theme = 'light';
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
+    }
+
+</script>
+</head>
+<body id="top">
+    <header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="DeCody(cdxvy30) (Alt + H)">DeCody(cdxvy30)</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="http://localhost:1313/post/" title="Post">
+                    <span>Post</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/archives/" title="Archives">
+                    <span>Archives</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/about/" title="About me">
+                    <span>About me</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      2024 LINE TECH FRESH 面試心得
+    </h1>
+    <div class="post-meta"><span title='2024-11-26 22:38:00 +0800 CST'>November 26, 2024</span>&nbsp;·&nbsp;<span>1 min</span>
+
+</div>
+  </header> 
+  <div class="post-content"><h2 id="說在前面">說在前面<a hidden class="anchor" aria-hidden="true" href="#說在前面">#</a></h2>
+<p>跟板上的其他心得不太一樣，總共面試了兩次，第一面是後端/全端的職缺，自己評估表現雖然不算差但也不到特別出色，不過也因為在面試後端過程中給面試官留下不錯的印象 (後來進公司後在活動中跟一面的面試官相認時聊到的，據說當初面完一直被面試官們覺得我對 DevOps 比較有興趣)，才拿到第二次面試機會。</p>
+<p>第二面是 DevOps/SRE，屬於偏向維運的工作內容，是除了後端開發以外我也很感興趣的另一個領域，還好有順利拿下。</p>
+<p>趁著記憶還在，還有面試當下的一些紀錄，希望能幫到最近/未來也想進到 LINE 實習的人們！</p>
+<h2 id="背景">背景<a hidden class="anchor" aria-hidden="true" href="#背景">#</a></h2>
+<p>申請當下是土木所碩二，有新創後端工程師、國泰雲端架構工程的實習經驗，靠自學、實習累積經驗和技能，技能主要點在 Backend 和 DevOps；另外有開源社群 (雲端原生運算基金會 CNCF、台灣雲端原生使用者社群 CNTUG) 貢獻的經驗，在這兩個社群的貢獻都是偏技術推廣的性質。</p>
+<h2 id="時間軸">時間軸<a hidden class="anchor" aria-hidden="true" href="#時間軸">#</a></h2>
+<ul>
+<li>2024.03.30 投遞履歷</li>
+<li>2024.04.12 收到面試邀約</li>
+<li>2024.04.19 Backend/Central Dev team 面試</li>
+<li>2024.05.16 收到感謝信</li>
+<li>2024.06.12 收到加開職缺 (DevOps/SRE)，透過<a href="https://patty111.github.io/blog/">朋友</a>內推</li>
+<li>2024.06.25 DevOps/SRE team 面試，三天後錄取</li>
+</ul>
+<h2 id="面試職位">面試職位<a hidden class="anchor" aria-hidden="true" href="#面試職位">#</a></h2>
+<ol>
+<li>Backend/Central Dev Team</li>
+<li>DevOps/SRE</li>
+</ol>
+<p>第一次面的內容因為沒有錄取就不特別放了XD，所以主要會介紹 DevOps/SRE 的面試內容，也是 TECH FRESH 中比較少見的職缺。</p>
+<h2 id="面試內容">面試內容<a hidden class="anchor" aria-hidden="true" href="#面試內容">#</a></h2>
+<p>面試官共有兩位，分別是 DevOps 和 SRE 的 Team Lead，面試過程主要是 DevOps Team Lead 主導 (也是我目前的 Mentor)。</p>
+<p>面試官先說明為什麼找我來面試，主要是我過去除了後端開發之外，也有一些 DevOps/SRE 的實務經驗，加上 Backend Team 給的 feedback 不錯，才找我來進行第二次面試。</p>
+<blockquote>
+<p>其實當初沒有聽過有面試兩次的機會，以結果來說，真的每次面試都要好好準備；即使這次沒上，只要在公司內部留下不錯的評價，未來都有可能成為公司潛在的人選 (公司是會有人才庫的)。</p>
+</blockquote>
+<p>接著說明了整個面試流程，主要就分成<strong>自我介紹</strong>、<strong>技術問答</strong>，以及讓<strong>面試者對面試官提問</strong>三個環節。</p>
+<p>接下來就稍微列一下我認為各個環節可以注意的重點，技術問答的部分雖然根據個人經歷一定有所不同，但也會稍微帶到準備心法以及 DevOps/SRE 可能會被問到的一些問題。</p>
+<h3 id="自我介紹">自我介紹<a hidden class="anchor" aria-hidden="true" href="#自我介紹">#</a></h3>
+<p>自我介紹最重要的就是好好呈現自己 (好的一面) 啦！<strong>面試官通常會根據自我介紹去做後續 follow-up 的問答，所以如果時間允許的話做個簡報是不錯的選擇</strong>，而沒有做簡報的話，面試官就會根據履歷關投遞的內容去問。</p>
+<blockquote>
+<p>簡報比起履歷可以更清楚的呈現自己做過的專案、更詳細介紹自己的貢獻等等，而且做完一份簡報就可以用在各個面試中，只有好處沒有壞處！</p>
+</blockquote>
+<p>我在簡報主要透過時序的方式，介紹自己為何開始學習軟體工程、開發過的專案、參與過的實習，以及參與開源社群的經驗。<strong>注意簡報也不能做得太發散，專注於呈現與職缺相關且你足夠熟悉的經驗、專案即可</strong>，時間也不要拉得太長 (10~15分鐘通常是極限，除非面試官有額外允許)，否則面試官聽到失去注意力反而不好。</p>
+<h3 id="技術問答">技術問答<a hidden class="anchor" aria-hidden="true" href="#技術問答">#</a></h3>
+<p>技術問答基本上面試官會針對前面自我介紹的部分做延伸，另一方面來說，自我介紹也決定了整個面試走向，所以<strong>請確保自己可以清楚解釋履歷上或自我介紹時提及的各個專案經驗</strong>！不熟的專案或經驗就別介紹了，反而是扣分項。至於是否熟悉自己的專案，我覺得在準備時可以根據幾個點評估:</p>
+<ul>
+<li>是否講得出技術上的取捨？例如為什麼使用 PostgreSQL 而不是 MongoDB，這類型的問題。</li>
+<li>是否講得出某工具/技術背後的原理？像是假設你的架構中用到 Istio，你知道為什麼要用它嗎？它是怎麼運作的？</li>
+<li>是否有可以優化的地方？有的話，要怎麼做？這部分就算原本在專案中沒有實作，只要後續有做 follow-up research 都很加分。</li>
+</ul>
+<p>以我來說，因為有使用過 Prometheus 的經驗，就被問到對於 Observability 的看法、對可觀測性三本柱的理解、怎麼架設 Prometheus、Prometheus 運作機制等等；另外關於 Istio 的經驗就被問到關於 sidecar pattern (在寫這篇的當下 ambient mode 剛推出，雲端原生的技術變動太快了&hellip;)、Istio sidecar 是使用什麼技術、How to trace with Jaegar、Istio 中東西向流量的問題。</p>
+<p>滿有趣的一點是，SRE Team Lead 有針對履歷上沒有的經驗做一些延伸問答，雖然他知道我可能回答不出來，但面試官給人的感覺是，想讓面試者知道這個問題的方向上還有什麼可以學習的，而不是刁難面試者，就面試體驗來說，能夠在這樣的技術問答中學習到一些知識也很不錯！而就面試者 (我) 的角度而言，回答不出來沒關係，還是可以<strong>根據既有的經驗給出一些 context，讓面試官知道你是知道這個議題的，不過因為沒有實務操作的經驗而沒辦法給出精確的 solution</strong>，我覺得這也是 DevOps/SRE 技術問答上可以多磨練的點，因為這領域可以學習的技術多到學不完，針對一個議題可能就有 10 幾種解決方案。</p>
+<blockquote>
+<p>小提示：可以從公司經營的部落格了解內部的技術分享文化，個人覺得這樣的面試官所待的環境通常有良好的 tech sharing 文化。
+像 <a href="https://techblog.lycorp.co.jp/zh-hant">LINE 的工程部落格</a> 我覺得就滿值得看看的！裡面也有一些過去實習生的經驗分享！</p>
+</blockquote>
+<h3 id="面試者提問">面試者提問<a hidden class="anchor" aria-hidden="true" href="#面試者提問">#</a></h3>
+<p>最困難的環節過去了！不論前面的環節表現如何，這個時間就重新開始，穩下心態，用一些好的問題加深面試官對你的印象。<strong>像是工作內容、跟該職務相關的技術問題，不僅可以展現你對於該職位的企圖心，也能讓面試官看到你對於某個議題的求知慾</strong>。</p>
+<p>以我的例子來說，就問到 DevOps/SRE 的工作內容和比例、實際入職後維運/寫程式/寫文件的時間分配，還有關於 Terraform 在公司內部的使用情況。</p>
+<h2 id="一些心得">一些心得<a hidden class="anchor" aria-hidden="true" href="#一些心得">#</a></h2>
+<p>從 3 月多同時準備各家公司的面試，到 5 月陸陸續續收到 offer 或感謝信 (想去的公司都沒上)，這段時間雖然煎熬但也學習到很多。6 月拿到二面機會實在出乎意料，很感謝去年實習認識、比我早半年到 LINE 實習的朋友幫忙內推，加上自己前面有好好表現，才有這次機會。</p>
+<p>在面試前花滿多時間準備 Docker/K8s 相關的問題，結果竟然都沒被問到，滿意外的 (可能都被認為是標配技能了?)，但我覺得之後面這類型的職缺還是要準備一下。</p>
+<p>面試之後發現其中一位面試官竟然是之前同一個開源社群的貢獻者，不知道有沒有因為在同個開源社群貢獻過而加分XD，有機會再寫一篇分享做開源的心得。</p>
+<p>最後錄取上一直以來很嚮往的公司，也順利在 7 月時入職了，謝謝看到這邊的你，希望以上心得分享能幫助到正在準備申請的各位！</p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="http://localhost:1313/tags/interview/">Interview</a></li>
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="http://localhost:1313/">DeCody(cdxvy30)</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu');
+    if (menu) {
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        const html = document.querySelector("html");
+        if (html.dataset.theme === "dark") {
+            html.dataset.theme = 'light';
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            html.dataset.theme = 'dark';
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

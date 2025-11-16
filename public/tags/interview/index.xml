@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>DeCody(cdxvy30)</title>
-    <link>http://localhost:1313/</link>
-    <description>Recent content on DeCody(cdxvy30)</description>
+    <title>Interview on DeCody(cdxvy30)</title>
+    <link>http://localhost:1313/tags/interview/</link>
+    <description>Recent content in Interview on DeCody(cdxvy30)</description>
     <generator>Hugo -- 0.152.2</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 26 Nov 2024 22:38:00 +0800</lastBuildDate>
-    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/interview/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>2024 LINE TECH FRESH 面試心得</title>
       <link>http://localhost:1313/post/2024-line-tech-fresh/</link>
@@ -37,13 +37,6 @@
 &lt;h2 id=&#34;面試內容&#34;&gt;面試內容&lt;/h2&gt;
 &lt;p&gt;面試官共有兩位，分別是 DevOps 和 SRE 的 Team Lead，面試過程主要是 DevOps Team Lead 主導 (也是我目前的 Mentor)。&lt;/p&gt;
 &lt;p&gt;面試官先說明為什麼找我來面試，主要是我過去除了後端開發之外，也有一些 DevOps/SRE 的實務經驗，加上 Backend Team 給的 feedback 不錯，才找我來進行第二次面試。&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title></title>
-      <link>http://localhost:1313/about/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/about/</guid>
-      <description></description>
     </item>
   </channel>
 </rss>
