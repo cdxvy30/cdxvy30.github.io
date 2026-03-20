@@ -1,6 +1,6 @@
 baseURL: http://cdxvy30.tw/
 languageCode: en-us
-title: DeCody(cdxvy30)
+title: DeCody
 theme: ["PaperMod"]
 
 menu:
@@ -20,3 +20,15 @@ menu:
 
 params:
   showReadingTime: true
+
+  homeInfoParams:
+    Title: "Hi there, I'm Cody."
+    Content: "Gains don't stop."
+
+  socialIcons:
+    - name: github
+      url: "https://github.com/cdxvy30"
+    - name: linkedin
+      url: "https://www.linkedin.com/in/cdxvy30"
+    - name: twitter
+      url: "https://x.com/cdxvy30"

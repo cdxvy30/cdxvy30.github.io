@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>LeetCode on (De)Cody</title>
+    <link>http://localhost:1313/tags/leetcode/</link>
+    <description>Recent content in LeetCode on (De)Cody</description>
+    <generator>Hugo -- 0.152.2</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 23 Jan 2026 11:00:00 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/leetcode/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>刷題記錄:</title>
+      <link>http://localhost:1313/post/leetcode/</link>
+      <pubDate>Fri, 23 Jan 2026 11:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/post/leetcode/</guid>
+      <description>&lt;p&gt;近期終於服完兵役，要回到求職市場（上次已經是 2024 面各家暑期/整年實習缺時 XD）；思考一陣子後決定還是從 Backend Engineer 而不是偏維運的 Cloud/DevOps/SRE 找起，而近期市場上比較好的後端缺大部分都還是有基本 OA、白版題等，因此還是不得不面對刷題。&lt;/p&gt;
+&lt;h2 id=&#34;128-longest-consecutive-sequence&#34;&gt;128. &lt;a href=&#34;https://leetcode.com/problems/longest-consecutive-sequence/description/&#34;&gt;Longest Consecutive Sequence&lt;/a&gt;&lt;/h2&gt;
+&lt;h3 id=&#34;關鍵資料結構演算法和想法&#34;&gt;關鍵資料結構、演算法和想法&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;這題比較明顯可以用 Hash Table 解&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;&lt;/h2&gt;</description>
+    </item>
+  </channel>
+</rss>
