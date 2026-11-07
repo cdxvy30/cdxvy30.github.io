@@ -6,8 +6,23 @@
     <description>Recent content on DeCody</description>
     <generator>Hugo -- 0.152.2</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 26 Nov 2024 22:38:00 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 07 Nov 2026 22:38:00 +0800</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Kubernetes Device Plugins 筆記 - 以 NVIDIA GPU 為例</title>
+      <link>http://localhost:1313/post/device-plugin/</link>
+      <pubDate>Sat, 07 Nov 2026 22:38:00 +0800</pubDate>
+      <guid>http://localhost:1313/post/device-plugin/</guid>
+      <description>&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
+&lt;p&gt;近期因工作上接觸 GPU 在 Kubernetes (下稱 K8s) 中如何被運用的相關議題，花不少時間在看 Device Plugin 的實作，因此記錄下來。&lt;/p&gt;
+&lt;h2 id=&#34;什麼是-device-plugin&#34;&gt;什麼是 Device Plugin？&lt;/h2&gt;
+&lt;p&gt;由於 K8s 本身並不認識 GPU 這個資源，如果只是單純在節點上插 GPU、安裝驅動程式，並不足以讓 K8s 可以利用 GPU 資源。K8s 官方提出了 Device Plugin 這個機制，讓各個特定廠商的硬體裝置（包括但不限於 GPU、FPGA、InfiniBand 等）可以向 K8s「註冊」，更準確的說，是透過 kubelet gRPC service 暴露的 Registration 介面，由 Device Plugin 向 kubelet 註冊該硬體裝置的資源名稱、Unix Socket、API 版本等（例如 &lt;code&gt;nvidia.com/gpu&lt;/code&gt; 就是 NVIDIA 系列 GPU 註冊在 K8s 中的資源名稱），並由 kubelet 定期向 API Server 回報裝置數量，Patch 在節點的資訊中。&lt;/p&gt;
+&lt;p&gt;kubelet 暴露的 rpc 介面：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-go&#34; data-lang=&#34;go&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;service&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;Registration&lt;/span&gt; {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	&lt;span style=&#34;color:#a6e22e&#34;&gt;rpc&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;Register&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;RegisterRequest&lt;/span&gt;) &lt;span style=&#34;color:#a6e22e&#34;&gt;returns&lt;/span&gt; (&lt;span style=&#34;color:#a6e22e&#34;&gt;Empty&lt;/span&gt;) {}
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;device-plugin&#34;&gt;Device Plugin&lt;/h2&gt;</description>
+    </item>
     <item>
       <title>2024 LINE TECH FRESH 面試心得</title>
       <link>http://localhost:1313/post/2024-line-tech-fresh/</link>

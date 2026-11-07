@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>LeetCode on (De)Cody</title>
+    <title>LeetCode on DeCody</title>
     <link>http://localhost:1313/tags/leetcode/</link>
-    <description>Recent content in LeetCode on (De)Cody</description>
+    <description>Recent content in LeetCode on DeCody</description>
     <generator>Hugo -- 0.152.2</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 23 Jan 2026 11:00:00 +0800</lastBuildDate>
